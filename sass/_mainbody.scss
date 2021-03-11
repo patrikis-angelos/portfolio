@@ -1,10 +1,13 @@
-.intro-container {
+.intro {
   height: calc(100vh - 80px);
 }
 
 .container {
-  width: calc(100% - 200px);
-  height: calc(60vh - 120px);
+  max-width: 1400px;
+}
+
+.item {
+  height: 40vh;
 }
 
 .content {
@@ -26,16 +29,12 @@
 }
 
 .img {
-  height: 100%;
+  width: 100%;
 }
 
 .img-container {
   height: 100%;
   overflow: hidden;
-}
-
-.introduction {
-  max-width: 50%;
 }
 
 .about-me {

@@ -347,6 +347,52 @@
   padding-top: 200px;
   padding-bottom: 200px; }
 
+.m-p10 {
+  margin: 10%; }
+
+.m-left-p10 {
+  margin-left: 10%; }
+
+.m-right-p10 {
+  margin-right: 10%; }
+
+.m-top-p10 {
+  margin-top: 10%; }
+
+.m-bottom-p10 {
+  margin-bottom: 10%; }
+
+.m-x-p10 {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.m-y-p10 {
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
+.p-p10 {
+  padding: 10%; }
+
+.p-left-p10 {
+  padding-left: 10%; }
+
+.p-right-p10 {
+  padding-right: 10%; }
+
+.p-top-p10 {
+  padding-top: 10%; }
+
+.p-bottom-p10 {
+  padding-bottom: 10%; }
+
+.p-x-p10 {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.p-y-p10 {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+
 .z-1 {
   z-index: 1; }
 
@@ -370,9 +416,6 @@ nav {
 
 .container {
   max-width: 1400px; }
-
-.item {
-  height: 40vh; }
 
 .content {
   width: calc(50% - 40px); }

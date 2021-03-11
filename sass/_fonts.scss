@@ -1,0 +1,29 @@
+@font-face {
+  font-family: ArcadeClassic;
+  src: url("fonts/ARCADECLASSIC.TTF");
+}
+
+@font-face {
+  font-family: DotGothic;
+  src: url("fonts/DotGothic16-Regular.ttf");
+}
+
+.pixelate {
+  font-family: ArcadeClassic, sans-serif;
+}
+
+.dot_gothic {
+  font-family: DotGothic, sans-serif;
+}
+
+.x-large {
+  font-size: 40px;
+}
+
+.medium {
+  font-size: 25px;
+}
+
+.regular {
+  font-size: 20px;
+}

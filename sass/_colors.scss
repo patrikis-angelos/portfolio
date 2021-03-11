@@ -1,0 +1,17 @@
+$colors: (
+  primary: $sonic-silver,
+  secondary: $mint,
+  supplementary: $mint-cream,
+  bl: $black,
+  cream: $mint-cream,
+);
+
+@each $prop, $value in $colors {
+  .color-#{$prop} {
+    color: $value;
+  }
+
+  .bg-color-#{$prop} {
+    background-color: $value;
+  }
+}

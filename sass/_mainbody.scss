@@ -1,0 +1,54 @@
+.intro-container {
+  height: calc(100vh - 80px);
+}
+
+.container {
+  width: calc(100% - 200px);
+  height: calc(60vh - 120px);
+}
+
+.content {
+  width: calc(50% - 40px);
+}
+
+.preview {
+  width: calc(50% - 40px);
+}
+
+.dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.tag {
+  border-radius: 10px;
+}
+
+.img {
+  height: 100%;
+}
+
+.img-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.introduction {
+  max-width: 50%;
+}
+
+.about-me {
+  max-width: 80%;
+}
+
+.button {
+  border: solid 1px;
+  border-color: $sonic-silver;
+}
+
+.lang-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

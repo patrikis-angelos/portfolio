@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.inverse {
+  flex-direction: row-reverse;
+}
+
 .align-center {
   align-items: center;
 }
@@ -37,4 +41,30 @@
 
 .hidden-overflow {
   overflow: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .md-inline {
+    display: inline;
+  }
+
+  .md-block {
+    display: block;
+  }
+
+  .md-flex {
+    display: flex;
+  }
+
+  .md-align-center {
+    align-items: center;
+  }
 }

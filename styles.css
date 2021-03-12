@@ -1,9 +1,6 @@
 .rounded {
   font-family: 'M PLUS Rounded 1c', sans-serif; }
 
-.medium {
-  font-weight: 500; }
-
 .bold {
   font-weight: 700; }
 
@@ -14,6 +11,7 @@
   font-size: 40px; }
 
 .medium {
+  font-weight: 500;
   font-size: 25px; }
 
 .regular {
@@ -78,10 +76,10 @@
   background-color: #757780; }
 
 .color-secondary {
-  color: #B7E3CC; }
+  color: #b7e3cc; }
 
 .bg-color-secondary {
-  background-color: #B7E3CC; }
+  background-color: #b7e3cc; }
 
 .color-secondary-transparent {
   color: #b7e3cca2; }
@@ -90,22 +88,22 @@
   background-color: #b7e3cca2; }
 
 .color-supplementary {
-  color: #F1F7ED; }
+  color: #f1f7ed; }
 
 .bg-color-supplementary {
-  background-color: #F1F7ED; }
+  background-color: #f1f7ed; }
 
 .color-bl {
-  color: #0F0A0A; }
+  color: #0f0a0a; }
 
 .bg-color-bl {
-  background-color: #0F0A0A; }
+  background-color: #0f0a0a; }
 
 .color-cream {
-  color: #F1F7ED; }
+  color: #f1f7ed; }
 
 .bg-color-cream {
-  background-color: #F1F7ED; }
+  background-color: #f1f7ed; }
 
 @media (min-width: 768px) {
   .md-color-primary {
@@ -405,8 +403,8 @@
   .md-m-left-20 {
     margin-left: 20px; } }
 nav {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 80px; }
 
 .nav-container {
@@ -484,7 +482,7 @@ nav {
   border-radius: 50%; }
 
 .item {
-  border: solid 1px #B7E3CC;
+  border: solid 1px #b7e3cc;
   border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,7 @@
     "scss/at-rule-no-unknown": true,
     "csstree/validator": {
       "properties": {
-        "width": "| fit-content"
+        "width": "| fit-content | -moz-fit-content"
       }
     }
   },

@@ -475,7 +475,8 @@ nav {
 .button {
   border: solid 1px;
   border-color: #757780;
-  width: fit-content; }
+  width: fit-content;
+  width: -moz-fit-content; }
 
 .lang-icon {
   width: 50px;

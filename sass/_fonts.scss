@@ -1,19 +1,17 @@
-@font-face {
-  font-family: ArcadeClassic;
-  src: url("fonts/ARCADECLASSIC.TTF");
+.rounded {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-@font-face {
-  font-family: DotGothic;
-  src: url("fonts/DotGothic16-Regular.ttf");
+.medium {
+  font-weight: 500;
 }
 
-.pixelate {
-  font-family: ArcadeClassic, sans-serif;
+.bold {
+  font-weight: 700;
 }
 
-.dot_gothic {
-  font-family: DotGothic, sans-serif;
+.extra-bold {
+  font-weight: 800;
 }
 
 .x-large {

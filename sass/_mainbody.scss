@@ -8,6 +8,9 @@
 
 .content {
   width: 100%;
+  @media(min-width: 768px) {
+    width: 50%;
+  } 
 }
 
 .dot {
@@ -28,6 +31,16 @@
   width: 100px;
   top: calc(100px - 50px);
   left: calc(100px - 50px);
+}
+
+.circle1 {
+  bottom:-250px;
+  right:0;
+}
+
+.circle2 {
+  top:-150px;
+  left:-50px;
 }
 
 .dragable {
@@ -63,7 +76,7 @@
 
 .button {
   border: solid 1px;
-  border-color: $sonic-silver;
+  border-color: $primary;
 }
 
 .lang-icon {

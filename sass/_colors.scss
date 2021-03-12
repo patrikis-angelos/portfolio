@@ -1,5 +1,5 @@
 $colors: (
-  primary: $sonic-silver,
+  primary: $primary,
   secondary: $mint,
   secondary-transparent: $mint-transparent,
   supplementary: $mint-cream,
@@ -14,5 +14,11 @@ $colors: (
 
   .bg-color-#{$prop} {
     background-color: $value;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-color-primary {
+    color: $primary;
   }
 }

@@ -1,14 +1,14 @@
-@font-face {
-  font-family: ArcadeClassic;
-  src: url("fonts/ARCADECLASSIC.TTF"); }
-@font-face {
-  font-family: DotGothic;
-  src: url("fonts/DotGothic16-Regular.ttf"); }
-.pixelate {
-  font-family: ArcadeClassic, sans-serif; }
+.rounded {
+  font-family: 'M PLUS Rounded 1c', sans-serif; }
 
-.dot_gothic {
-  font-family: DotGothic, sans-serif; }
+.medium {
+  font-weight: 500; }
+
+.bold {
+  font-weight: 700; }
+
+.extra-bold {
+  font-weight: 800; }
 
 .x-large {
   font-size: 40px; }
@@ -107,6 +107,9 @@
 .bg-color-cream {
   background-color: #F1F7ED; }
 
+@media (min-width: 768px) {
+  .md-color-primary {
+    color: #757780; } }
 .m-10 {
   margin: 10px; }
 
@@ -392,6 +395,9 @@
 .z-3 {
   z-index: 3; }
 
+.z-4 {
+  z-index: 4; }
+
 @media (min-width: 768px) {
   .md-p-top-200 {
     padding-top: 200px; }
@@ -415,6 +421,9 @@ nav {
 
 .content {
   width: 100%; }
+  @media (min-width: 768px) {
+    .content {
+      width: 50%; } }
 
 .dot {
   border-radius: 50%;
@@ -432,6 +441,14 @@ nav {
   width: 100px;
   top: calc(100px - 50px);
   left: calc(100px - 50px); }
+
+.circle1 {
+  bottom: -250px;
+  right: 0; }
+
+.circle2 {
+  top: -150px;
+  left: -50px; }
 
 .dragable {
   cursor: pointer; }

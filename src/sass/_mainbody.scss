@@ -86,3 +86,9 @@
   height: 50px;
   border-radius: 50%;
 }
+
+@media (min-width: 768px) {
+  .main-tag:not(:first-of-type) {
+    margin-left: 20px;
+  }
+}

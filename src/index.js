@@ -21,7 +21,14 @@ const links = [
     text: 'Github',
   },
 ];
-const item1 = createItem('a', 'a', ['a'], 'a', ['a'], 'a');
+const item1 = createItem(
+  enigma,
+  'Enigma?',
+  ['Desktop app', 'Full Stack', '2021'],
+  desc,
+  ['RoR', 'HTML', 'SCSS'],
+  links,
+);
 
 const container = document.querySelector('main .container');
 container.appendChild(item1);

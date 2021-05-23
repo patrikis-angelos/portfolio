@@ -1,8 +1,8 @@
 import './reset.css';
 import './styles.css';
-import move from './dragable';
-import createItem from './display';
-import { enigma, weatherBot, store } from './items';
+import move from './logic/dragable';
+import createItem from './logic/display';
+import { enigma, weatherBot, store } from './logic/items';
 
 const elements = document.getElementsByClassName('dragable');
 for (let i = 0; i < elements.length; i++) {

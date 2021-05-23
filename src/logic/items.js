@@ -1,6 +1,6 @@
-import enigmaPic from './images/enigma.png';
-import weatherPic from './images/weatherbot.png';
-import storePic from './images/store.png';
+import enigmaPic from '../images/enigma.png';
+import weatherPic from '../images/weatherbot.png';
+import storePic from '../images/store.png';
 
 const enigma = {
   imgUrl: enigmaPic,

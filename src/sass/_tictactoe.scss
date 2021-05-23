@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  width: 150px;
+  height: 50px;
+}
+
+.row div {
+  height: 49px;
+  width: 49px;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.row:not(:last-of-type) div {
+  border-bottom: 1px solid black;
+}
+
+.row div:not(:last-of-type) {
+  border-right: 1px solid black;
+}

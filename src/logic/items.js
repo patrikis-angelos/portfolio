@@ -56,4 +56,18 @@ const store = {
   ]
 };
 
-export { enigma, weatherBot, store };
+const tictactoe = {
+  imgUrl: '',
+  contentTitle: '',
+  tagsInfo: [''],
+  desc: ``,
+  techTagsInfo: [''],
+  linksInfo: [
+    {
+      url: '',
+      text: 'Github',
+    },
+  ]
+};
+
+export { enigma, weatherBot, store, tictactoe };

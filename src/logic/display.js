@@ -42,11 +42,12 @@ const createItem = (element, inverse = false) => {
   imageWrapper.classList.add('content', 'bg-color-primary', 'hidden-overflow');
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('img-container', 'flex', 'align-center', 'relative');
-  const img = document.createElement('img');
-  img.classList.add('img', 'absolute');
-  img.src = imgUrl;
-
-  imageContainer.appendChild(img);
+  if (imgUrl !== '') {
+    const img = document.createElement('img');
+    img.classList.add('img', 'absolute');
+    img.src = imgUrl;
+    imageContainer.appendChild(img);
+  }
   imageWrapper.appendChild(imageContainer);
 
   const content = document.createElement('div');

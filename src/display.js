@@ -33,9 +33,10 @@ const createLink = (url, text) => {
   return link;
 };
 
-const createItem = (imgUrl, contentTitle, tagsInfo, desc, techTagsInfo, linksInfo) => {
+const createItem = (element, inverse = false) => {
+  const { imgUrl, contentTitle, tagsInfo, desc, techTagsInfo, linksInfo } = element
   const item = document.createElement('div');
-  item.classList.add('p-x-20', 'md-flex', 'space-between');
+  item.classList.add('p-x-20', 'md-flex', 'space-between', 'm-top-100');
 
   const imageWrapper = document.createElement('div');
   imageWrapper.classList.add('content', 'bg-color-primary', 'hidden-overflow');
@@ -87,8 +88,14 @@ const createItem = (imgUrl, contentTitle, tagsInfo, desc, techTagsInfo, linksInf
   content.appendChild(description);
   content.appendChild(techTags);
   content.appendChild(links);
-  item.appendChild(imageWrapper);
-  item.appendChild(content);
+
+  if (inverse){
+    item.appendChild(content);
+    item.appendChild(imageWrapper);
+  } else {
+    item.appendChild(imageWrapper);
+    item.appendChild(content);
+  }
 
   return item;
 };

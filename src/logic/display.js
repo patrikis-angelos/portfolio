@@ -34,7 +34,9 @@ const createLink = (url, text) => {
 };
 
 const createItem = (element, inverse = false) => {
-  const { imgUrl, contentTitle, tagsInfo, desc, techTagsInfo, linksInfo } = element
+  const {
+    imgUrl, contentTitle, tagsInfo, desc, techTagsInfo, linksInfo,
+  } = element;
   const item = document.createElement('div');
   item.classList.add('p-x-20', 'md-flex', 'space-between', 'm-top-100');
 
@@ -90,7 +92,7 @@ const createItem = (element, inverse = false) => {
   content.appendChild(techTags);
   content.appendChild(links);
 
-  if (inverse){
+  if (inverse) {
     item.appendChild(content);
     item.appendChild(imageWrapper);
   } else {

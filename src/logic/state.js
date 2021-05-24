@@ -8,31 +8,31 @@ const state = () => {
       return true;
     }
     return false;
-  }
+  };
 
-  const getBoard = () => {
-    return board;
-  }
+  const getBoard = () => board;
 
   const setBoard = (b) => {
     board = [...b];
-  }
+  };
 
   const setCell = (move, symbol) => {
     board[move] = symbol;
-  }
+  };
 
   const win = () => {
     for (let w = 0; w < WIN_CASES.length; w++) {
-      const c = WIN_CASES[w]
+      const c = WIN_CASES[w];
       if (board[c[0]] != '' && board[c[0]] === board[c[1]] && board[c[0]] === board[c[2]]) {
         return true;
       }
     }
     return false;
-  }
+  };
 
-  return { win, checkMove, setBoard, setCell, getBoard }
-}
+  return {
+    win, checkMove, setBoard, setCell, getBoard,
+  };
+};
 
 export default state;

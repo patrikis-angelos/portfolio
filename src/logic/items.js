@@ -19,7 +19,7 @@ const enigma = {
       url: 'https://github.com/patrick-angelos/Enigma',
       text: 'Github',
     },
-  ]
+  ],
 };
 
 const weatherBot = {
@@ -34,7 +34,7 @@ const weatherBot = {
       url: 'https://github.com/patrick-angelos/SlackBot',
       text: 'Github',
     },
-  ]
+  ],
 };
 
 const store = {
@@ -53,7 +53,7 @@ const store = {
       url: 'https://github.com/patrick-angelos/onlineShop',
       text: 'Github',
     },
-  ]
+  ],
 };
 
 const tictactoeProject = {
@@ -68,7 +68,9 @@ const tictactoeProject = {
       url: 'https://github.com/patrick-angelos/tic-tac-toe',
       text: 'Github',
     },
-  ]
+  ],
 };
 
-export { enigma, weatherBot, store, tictactoeProject };
+export {
+  enigma, weatherBot, store, tictactoeProject,
+};

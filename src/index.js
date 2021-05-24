@@ -2,7 +2,9 @@ import './reset.css';
 import './styles.css';
 import move from './logic/dragable';
 import createItem from './logic/display';
-import { enigma, weatherBot, store, tictactoeProject } from './logic/items';
+import {
+  enigma, weatherBot, store, tictactoeProject,
+} from './logic/items';
 import { createBoard, tictactoe } from './logic/tictactoe';
 
 const elements = document.getElementsByClassName('dragable');
@@ -28,12 +30,12 @@ reset_button.classList.add('reset-button');
 reset_button.textContent = 'Reset Board';
 game_board.appendChild(reset_button);
 game_space.appendChild(game_board);
-const board = document.querySelectorAll(".row div");
+const board = document.querySelectorAll('.row div');
 
 for (let i = 0; i < board.length; i++) {
   board[i].addEventListener('click', (e) => {
     tictactoe.handleClick(e);
-  })
+  });
 }
 
 reset_button.addEventListener('click', () => {

@@ -56,7 +56,7 @@ const store = {
   ]
 };
 
-const tictactoe = {
+const tictactoeProject = {
   imgUrl: '',
   contentTitle: '',
   tagsInfo: [''],
@@ -70,4 +70,4 @@ const tictactoe = {
   ]
 };
 
-export { enigma, weatherBot, store, tictactoe };
+export { enigma, weatherBot, store, tictactoeProject };

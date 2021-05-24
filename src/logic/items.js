@@ -60,7 +60,7 @@ const tictactoeProject = {
   imgUrl: '',
   contentTitle: 'Tic Tac Toe bot',
   tagsInfo: ['MINIMAX', '2021'],
-  desc: `An unbeattable bot for the Tic Tac Toe game using a simple MINIMAX algorithm. 
+  desc: `A tic tac toe game featuring an unbeatable bot made using a simple MINIMAX algorithm. 
   Try it and play by clicking on the board`,
   techTagsInfo: ['JavaScript'],
   linksInfo: [

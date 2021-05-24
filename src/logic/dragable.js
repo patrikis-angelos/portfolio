@@ -1,21 +1,15 @@
 const move = (elem) => {
-  const Select = (e) => {
-    e.preventDefault();
-    mouse_x = e.clientX;
-    mouse_y = e.clientY;
-    elem.style.cursor = 'move';
-    document.onmouseup = Diselect;
-    document.onmousemove = ChangePosition;
-  };
+  let mouseX = 0;
+  let mouseY = 0;
 
   const ChangePosition = (e) => {
     e.preventDefault();
-    const offset_x = mouse_x - e.clientX;
-    const offset_y = mouse_y - e.clientY;
-    mouse_x = e.clientX;
-    mouse_y = e.clientY;
-    elem.style.top = `${elem.offsetTop - offset_y}px`;
-    elem.style.left = `${elem.offsetLeft - offset_x}px`;
+    const offsetX = mouseX - e.clientX;
+    const offsetY = mouseY - e.clientY;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    elem.style.top = `${elem.offsetTop - offsetY}px`;
+    elem.style.left = `${elem.offsetLeft - offsetX}px`;
   };
 
   const Diselect = () => {
@@ -24,8 +18,15 @@ const move = (elem) => {
     document.onmousemove = null;
   };
 
-  let mouse_x = 0; let
-    mouse_y = 0;
+  const Select = (e) => {
+    e.preventDefault();
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    elem.style.cursor = 'move';
+    document.onmouseup = Diselect;
+    document.onmousemove = ChangePosition;
+  };
+
   elem.onmousedown = Select;
 };
 

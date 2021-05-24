@@ -16,25 +16,10 @@ const bot = (name, symbol) => {
   const possibleMoves = (s) => {
     const pm = [];
     const board = s.getBoard();
-    for (let i = 0; i < board.length; i++) {
+    for (let i = 0; i < board.length; i += 1) {
       if (board[i] === '') pm.push(i);
     }
     return pm;
-  };
-
-  const testMoves = (s) => {
-    const moves = possibleMoves(s);
-    const ratings = [];
-    for (let i = 0; i < moves.length; i++) {
-      let score = 0;
-      makeMove(moves[i], s);
-      if (s.win()) return moves[i];
-      score = rate(s, 'player');
-      ratings.push({ move: moves[i], score });
-      s.setCell(moves[i], '');
-    }
-    const move = bestMove(ratings);
-    return move;
   };
 
   const rate = (s, turn) => {
@@ -43,7 +28,7 @@ const bot = (name, symbol) => {
     const ratings = [];
     let score = 0;
     if (turn === 'bot') {
-      for (let i = 0; i < moves.length; i++) {
+      for (let i = 0; i < moves.length; i += 1) {
         makeMove(moves[i], s);
         if (s.win()) {
           s.setCell(moves[i], '');
@@ -56,7 +41,7 @@ const bot = (name, symbol) => {
       const max = Math.max(...ratings);
       return max;
     }
-    for (let i = 0; i < moves.length; i++) {
+    for (let i = 0; i < moves.length; i += 1) {
       enemy.makeMove(moves[i], s);
       if (s.win()) {
         s.setCell(moves[i], '');
@@ -73,11 +58,11 @@ const bot = (name, symbol) => {
   const bestMove = (moves) => {
     let max = -10;
     const best = [];
-    for (let i = 0; i < moves.length; i++) {
+    for (let i = 0; i < moves.length; i += 1) {
       const { score } = moves[i];
       max = score > max ? score : max;
     }
-    for (let i = 0; i < moves.length; i++) {
+    for (let i = 0; i < moves.length; i += 1) {
       const { move, score } = moves[i];
       if (score === max) best.push(move);
     }
@@ -85,10 +70,25 @@ const bot = (name, symbol) => {
     return best[move];
   };
 
+  const testMoves = (s) => {
+    const moves = possibleMoves(s);
+    const ratings = [];
+    for (let i = 0; i < moves.length; i += 1) {
+      let score = 0;
+      makeMove(moves[i], s);
+      if (s.win()) return moves[i];
+      score = rate(s, 'player');
+      ratings.push({ move: moves[i], score });
+      s.setCell(moves[i], '');
+    }
+    const move = bestMove(ratings);
+    return move;
+  };
+
   const chooseMove = (s) => {
-    const bot_state = state();
-    bot_state.setBoard(s.getBoard());
-    const move = testMoves(bot_state);
+    const botState = state();
+    botState.setBoard(s.getBoard());
+    const move = testMoves(botState);
     return move;
   };
 

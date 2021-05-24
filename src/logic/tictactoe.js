@@ -6,10 +6,10 @@ const createBoard = () => {
   const game = document.createElement('div');
   game.classList.add('game');
   game.id = 'game';
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const row = document.createElement('div');
     row.classList.add('row');
-    for (let j = i * 3; j < i * 3 + 3; j++) {
+    for (let j = i * 3; j < i * 3 + 3; j += 1) {
       const cell = document.createElement('div');
       cell.id = j;
       row.appendChild(cell);
@@ -23,19 +23,19 @@ const tictactoe = (() => {
   let game = state();
   const player1 = player('Player1', 'X');
   const player2 = bot('Player2', 'O');
-  let current_player = player1;
+  let currentPlayer = player1;
   let winner = false;
   let count = 0;
 
   const reset = (board) => {
-    if (current_player === player2 && !winner) return;
-    for (let i = 0; i < board.length; i++) {
+    if (currentPlayer === player2 && !winner) return;
+    for (let i = 0; i < board.length; i += 1) {
       board[i].textContent = '';
     }
     game = state();
     winner = false;
     count = 0;
-    current_player = player1;
+    currentPlayer = player1;
   };
 
   const botTurn = () => {
@@ -44,28 +44,38 @@ const tictactoe = (() => {
       const cell = document.getElementById(`${move}`);
       player2.makeMove(move, game, cell);
       count += 1;
-      if (game.win()) return winner = player2;
+      if (game.win()) {
+        winner = player2;
+        return winner;
+      }
 
-      current_player = player1;
+      currentPlayer = player1;
       return false;
     }, 1000);
   };
 
   const handleClick = (e) => {
     if (winner) return winner;
-    if (current_player === player2) return false;
+    if (currentPlayer === player2) return false;
 
     const cell = e.target;
     const move = cell.id;
-    if (!game.checkMove(move)) return;
+    if (!game.checkMove(move)) return false;
 
-    current_player.makeMove(move, game, cell);
+    currentPlayer.makeMove(move, game, cell);
     count += 1;
-    if (game.win()) return winner = current_player;
-    if (count >= 9) return winner = 'draw';
+    if (game.win()) {
+      winner = currentPlayer;
+      return winner;
+    }
+    if (count >= 9) {
+      winner = 'draw';
+      return winner;
+    }
 
-    current_player = player2;
+    currentPlayer = player2;
     winner = botTurn();
+    return winner;
   };
 
   return { reset, botTurn, handleClick };

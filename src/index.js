@@ -8,7 +8,7 @@ import {
 import { createBoard, tictactoe } from './logic/tictactoe';
 
 const elements = document.getElementsByClassName('dragable');
-for (let i = 0; i < elements.length; i++) {
+for (let i = 0; i < elements.length; i += 1) {
   move(elements[i]);
 }
 
@@ -23,21 +23,21 @@ projects.appendChild(item2);
 projects.appendChild(item3);
 projects.appendChild(item4);
 
-const game_board = createBoard();
-const game_space = item4.querySelector('.img-container');
-const reset_button = document.createElement('button');
-reset_button.classList.add('reset-button');
-reset_button.textContent = 'Reset Board';
-game_board.appendChild(reset_button);
-game_space.appendChild(game_board);
+const gameBoard = createBoard();
+const gameSpace = item4.querySelector('.img-container');
+const resetButton = document.createElement('button');
+resetButton.classList.add('reset-button');
+resetButton.textContent = 'Reset Board';
+gameBoard.appendChild(resetButton);
+gameSpace.appendChild(gameBoard);
 const board = document.querySelectorAll('.row div');
 
-for (let i = 0; i < board.length; i++) {
+for (let i = 0; i < board.length; i += 1) {
   board[i].addEventListener('click', (e) => {
     tictactoe.handleClick(e);
   });
 }
 
-reset_button.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
   tictactoe.reset(board);
 });

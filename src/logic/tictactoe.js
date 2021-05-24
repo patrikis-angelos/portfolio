@@ -4,6 +4,7 @@ import state from './state';
 
 const createBoard = () => {
   const game = document.createElement('div');
+  game.classList.add('game');
   game.id = 'game';
   for (let i = 0; i < 3; i++) {
     const row = document.createElement('div');

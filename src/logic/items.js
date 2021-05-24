@@ -58,13 +58,14 @@ const store = {
 
 const tictactoeProject = {
   imgUrl: '',
-  contentTitle: '',
-  tagsInfo: [''],
-  desc: ``,
-  techTagsInfo: [''],
+  contentTitle: 'Tic Tac Toe bot',
+  tagsInfo: ['MINIMAX', '2021'],
+  desc: `An unbeattable bot for the Tic Tac Toe game using a simple MINIMAX algorithm. 
+  Try it and play by clicking on the board`,
+  techTagsInfo: ['JavaScript'],
   linksInfo: [
     {
-      url: '',
+      url: 'https://github.com/patrick-angelos/tic-tac-toe',
       text: 'Github',
     },
   ]

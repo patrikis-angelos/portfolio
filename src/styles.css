@@ -659,4 +659,13 @@ nav {
   border-right: 1px solid black;
 }
 
+.game {
+  margin: auto;
+}
+
+.reset-button {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

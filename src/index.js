@@ -23,11 +23,12 @@ projects.appendChild(item4);
 
 const game_board = createBoard();
 const game_space = item4.querySelector('.img-container');
+const reset_button = document.createElement('button');
+reset_button.classList.add('reset-button');
+reset_button.textContent = 'Reset Board';
+game_board.appendChild(reset_button);
 game_space.appendChild(game_board);
 const board = document.querySelectorAll(".row div");
-const reset_button = document.createElement('button');
-reset_button.textContent = 'Reset';
-game_space.appendChild(reset_button);
 
 for (let i = 0; i < board.length; i++) {
   board[i].addEventListener('click', (e) => {

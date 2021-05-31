@@ -3,7 +3,7 @@ import './styles.css';
 import move from './logic/dragable';
 import createItem from './logic/display';
 import {
-  enigma, weatherBot, tictactoeProject, dailyMealProject, spidersProject
+  enigma, weatherBot, tictactoeProject, dailyMealProject, spidersProject,
 } from './logic/items';
 import { createBoard, tictactoe } from './logic/tictactoe';
 

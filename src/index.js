@@ -3,7 +3,7 @@ import './styles.css';
 import move from './logic/dragable';
 import createItem from './logic/display';
 import {
-  enigma, weatherBot, store, tictactoeProject,
+  enigma, weatherBot, tictactoeProject, dailyMealProject, spidersProject
 } from './logic/items';
 import { createBoard, tictactoe } from './logic/tictactoe';
 
@@ -12,16 +12,18 @@ for (let i = 0; i < elements.length; i += 1) {
   move(elements[i]);
 }
 
-const item1 = createItem(enigma);
+const item1 = createItem(enigma, true);
 const item2 = createItem(tictactoeProject, true);
 const item3 = createItem(weatherBot);
-const item4 = createItem(store, true);
+const item4 = createItem(dailyMealProject);
+const item5 = createItem(spidersProject);
 
 const projects = document.querySelector('#projects');
-projects.appendChild(item1);
+projects.appendChild(item5);
 projects.appendChild(item2);
-projects.appendChild(item3);
 projects.appendChild(item4);
+projects.appendChild(item1);
+projects.appendChild(item3);
 
 const gameBoard = createBoard();
 const gameSpace = item2.querySelector('.img-container');

@@ -1,6 +1,7 @@
 import enigmaPic from '../images/enigma.png';
 import weatherPic from '../images/weatherbot.png';
-import storePic from '../images/store.png';
+import mealPic from '../images/Dailymeal.png';
+import spidersPic from '../images/spiders.png';
 
 const enigma = {
   imgUrl: enigmaPic,
@@ -37,25 +38,6 @@ const weatherBot = {
   ],
 };
 
-const store = {
-  imgUrl: storePic,
-  contentTitle: 'Zattix',
-  tagsInfo: ['HTML page', 'Frontend', '2020'],
-  desc: `An e-shop example page. It consists of a home page and a results page(static). 
-  You can see the products in a carousel on the home page.`,
-  techTagsInfo: ['HTML', 'SCSS'],
-  linksInfo: [
-    {
-      url: 'https://patrick-angelos.github.io/onlineShop/',
-      text: 'See project',
-    },
-    {
-      url: 'https://github.com/patrick-angelos/onlineShop',
-      text: 'Github',
-    },
-  ],
-};
-
 const tictactoeProject = {
   imgUrl: '',
   contentTitle: 'Tic Tac Toe bot',
@@ -71,6 +53,46 @@ const tictactoeProject = {
   ],
 };
 
+const dailyMealProject = {
+  imgUrl: mealPic,
+  contentTitle: 'DailyMeal',
+  tagsInfo: ['Frontend', '2021'],
+  desc: `A catalog of foods and drinks where the user can search for his favorite meals and apply filters on his search.
+  Every meal has a details page that the user can access by clicking on the title and see the ingredients of the meal and a link to the recipe.`,
+  techTagsInfo: ['React', 'Redux'],
+  linksInfo: [
+    {
+      url: 'https://daily-meal-patrick.herokuapp.com',
+      text: 'See project',
+    },
+    {
+      url: 'https://github.com/patrick-angelos/catalog',
+      text: 'Github',
+    },
+  ],
+};
+
+const spidersProject = {
+  imgUrl: spidersPic,
+  contentTitle: 'Spiders',
+  tagsInfo: ['Game', '2021'],
+  desc: `Spiders is a turn-based, RPG where the goal 
+  of the game is to collect as many coins as you can on a farm full of spiders. 
+  Each time you collect a coin a new spider spawns on the farm. 
+  You can submit your name before the game begins and compete for a high score.`,
+  techTagsInfo: ['JavaScript', 'Phaser'],
+  linksInfo: [
+    {
+      url: 'https://quizzical-aryabhata-55d239.netlify.app/',
+      text: 'See project',
+    },
+    {
+      url: 'https://github.com/patrick-angelos/TurnBasedRPG',
+      text: 'Github',
+    },
+  ],
+};
+
 export {
-  enigma, weatherBot, store, tictactoeProject,
+  enigma, weatherBot, tictactoeProject, dailyMealProject, spidersProject,
 };

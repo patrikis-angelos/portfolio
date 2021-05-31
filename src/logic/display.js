@@ -92,13 +92,10 @@ const createItem = (element, inverse = false) => {
   content.appendChild(techTags);
   content.appendChild(links);
 
-  if (inverse) {
-    item.appendChild(content);
-    item.appendChild(imageWrapper);
-  } else {
-    item.appendChild(imageWrapper);
-    item.appendChild(content);
-  }
+  if (inverse) item.classList.add('inverse');
+
+  item.appendChild(imageWrapper);
+  item.appendChild(content);
 
   return item;
 };

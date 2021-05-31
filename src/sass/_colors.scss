@@ -1,0 +1,24 @@
+$colors: (
+  primary: $primary,
+  secondary: $blue,
+  secondary-transparent: $blue-transparent,
+  supplementary: $mint-cream,
+  bl: $black,
+  cream: $mint-cream,
+);
+
+@each $prop, $value in $colors {
+  .color-#{$prop} {
+    color: $value;
+  }
+
+  .bg-color-#{$prop} {
+    background-color: $value;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-color-primary {
+    color: $primary;
+  }
+}

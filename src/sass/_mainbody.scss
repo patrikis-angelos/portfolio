@@ -1,0 +1,94 @@
+.intro {
+  min-height: calc(100vh - 80px);
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.content {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.sm-circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: calc(100px - 50px);
+  left: calc(100px - 50px);
+}
+
+.circle1 {
+  bottom: -250px;
+  right: 0;
+}
+
+.circle2 {
+  top: -150px;
+  left: -50px;
+}
+
+.dragable {
+  cursor: pointer;
+}
+
+.top-200 {
+  top: 160px;
+  left: 160px;
+}
+
+.tag {
+  border-radius: 10px;
+}
+
+.img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  width: 100%;
+  min-height: 100%;
+  height: 400px;
+}
+
+.about-me {
+  max-width: 80%;
+}
+
+.button {
+  border: solid 1px;
+  border-color: black;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.lang-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .main-tag:not(:first-of-type) {
+    margin-left: 20px;
+  }
+}
